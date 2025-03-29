@@ -1,0 +1,61 @@
+/* Анимация для портала */
+@keyframes Rotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1.5);
+    }
+    100% {
+        transform: rotate(720deg) scale(2);
+    }
+}
+
+.spiral.rotate {
+    /* Добавляем анимацию только при наличии класса rotate */
+    animation: Rotate 8s linear infinite;
+}
+ /* Анимация для наложения размытия перед телепортацией */
+ @keyframes blur-in {
+    0% {
+        filter: blur(0);
+    }
+    100% {
+        filter: blur(10px);
+    }
+}
+.blur-in {
+    animation: blur-in 2s ease-in-out forwards;
+}
+/* Анимация для исчезновения размытия после телепортации */
+@keyframes blur-out {
+    0% {
+        filter: blur(10px);
+        opacity: 1;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.blur-out {
+    animation: blur-out 2s ease-in-out forwards;
+}
+/* Анимация для конфетти */
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+.confetti {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 100;
+}
