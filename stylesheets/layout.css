@@ -134,7 +134,7 @@
 }
 .popup__1, .popup__2, .popup__3, .popup__4 {
   position: fixed;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background-color: #FF84EF;
