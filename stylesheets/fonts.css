@@ -1,0 +1,12 @@
+@font-face {
+    src: url("../fonts/Tektur/Tektur-ExtraBold.ttf") format("truetype"); 
+    font-family: "TekturExtraBold";
+}
+@font-face {
+    src: url("../fonts/Tektur/Tektur-Bold.ttf") format("truetype"); 
+    font-family: "TekturBold";
+} 
+@font-face {
+    src: url("../fonts/Tektur/Tektur-Medium.ttf") format("truetype"); 
+    font-family: "TekturMedium";
+} 
