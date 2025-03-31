@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="stylesheets/style.css" />
+		<link type="image/x-icon" href="images/favicon.svg" rel="icon">
+		<script src="javascripts/portal-section.js" defer></script>
+		<script src="javascripts/map-section.js" defer></script>
+		<script src="javascripts/events-sections.js" defer></script>
+		<title>World of Sweets</title>
+	</head>
+<body>
+<section class="portal" id="portal">
+	<img src="images/portal-spiral.svg" class="spiral" alt="Портал"> 
+	<div class="countdown">
+		<h1> Нажми на портал, <br> чтобы начать путешествие</h1>
+	</div>
+</section> 
+<section class="map" id="map">
+<div class="character-area">
+<div class="map-container">
+	<div class="map-title">
+		<h1>Интерактивная карта</h1>
+	</div>
+	<div class="locations" id="svg-map">
+	</div>
+	<div class="popup__1">
+		<button class="close-btn">&times;</button>
+		 <div class="location1_title">
+		<h3>Кремовые вершины</h3>
+		</div>
+		<div class="location_description">
+			<p> Величественные горы, созданные самой природой из нежных бисквитных слоёв, пропитанных сиропом и покрытых пышными облаками взбитых сливок.</p>
+			<div class="next-button">
+			<a id="event1">Перейти</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup__2">
+		<button class="close-btn">&times;</button>
+		 <div class="location2_title">
+		<h3>Леденцовые луга</h3>
+		</div>
+		<div class="location_description">
+			<p> Поля, усыпанные леденцами, которые медленно вращаются от дуновения ветра. Воздух здесь наполнен ароматами фруктов и сахара. </p>
+			<div class="next-button">
+			<a id="event2">Перейти</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup__3">
+		<button class="close-btn">&times;</button>
+		 <div class="location3_title">
+		<h3> Карамельные водопады </h3>
+		</div>
+		<div class="location_description">
+			<p> Потоки тягучей карамели падают с высоты в озеро жидкого ириса. В солнечном свете капли сверкают, словно янтарные драгоценности. </p>
+			<div class="next-button">
+			<a id="event3">Перейти</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup__4">
+		<button class="close-btn">&times;</button>
+		 <div class="location4_title">
+		<h3>Долина десертов</h3>
+		</div>
+		<div class="location_description">
+			<p> Просторные холмы из бисквита, покрытые кремом и глазурью, с зефирными кустами и карамельными деревьями. </p>
+			<div class="next-button">
+			<a id="event4">Перейти</a>
+			</div>
+		</div>
+	</div>
+	<div class="map-about" id="location_1">
+		<p> 
+		Выбери локацию для дальнейшего <br class="br"> исследования!
+		</p>
+	</div>
+</div>
+<div class="character">
+	<img src="images/character.svg">
+</div>
+<div class="dialog-box" id="svg-dialog">	
+</div>
+</div>
+<footer class="footer">
+	<div class="footer_columns">
+		<img src="images/logo.svg" class="logo">
+		<p>Стовба <br> Андрей</p>
+	</div>
+</footer>
+</section>
+<section class="event__1">
+	<div class="event_title">
+	<h4> Помоги украсить торт к празднику! </h4>
+	</div>
+		<img src="images/lemon1.svg" class="decoration decoration_1">
+		<img src="images/strawberry1.svg" class="decoration decoration_2">
+		<img src="images/strawberry2.svg" class="decoration decoration_3">
+		<img src="images/cherry.svg" class="decoration decoration_4">
+		<img src="images/lemon2.svg" class="decoration decoration_5">
+		<img src="images/strawberry3.svg" class="decoration decoration_6">
+		<img src="images/grape.svg" class="decoration decoration_7">
+		<img src="images/candy.svg" class="decoration decoration_8">
+	<div class="cake-container">
+		<img src="images/Cake.png" class="cake">
+	</div>
+	<div class="back" id="backButton_1"> 
+		<img src="images/back_arrow.svg" class="back-arrow">
+		<p>Обратно</p>
+	</div>
+</section>
+<section class="event__2">
+	<div class="event_title">
+	<h4> Помоги собрать леденец! </h4>
+	<img src="images/puzzle_1.png" class="puzzle puzzle_1">
+	<img src="images/puzzle_2.png" class="puzzle puzzle_2">
+	<img src="images/puzzle_3.png" class="puzzle puzzle_3">
+	<img src="images/puzzle_4.png" class="puzzle puzzle_4">
+	<img src="images/puzzle_5.png" class="puzzle puzzle_5">
+	<img src="images/puzzle_6.png" class="puzzle puzzle_6">
+	<img src="images/puzzle_7.png" class="puzzle puzzle_7">
+	<img src="images/puzzle_8.png" class="puzzle puzzle_8">
+	<img src="images/puzzle_9.png" class="puzzle puzzle_9">
+	</div>
+	<div class="lollipop-container">
+		<img src="images/lollipop.png" class="lollipop">
+	</div>
+	<div class="back" id="backButton_2"> 
+		<img src="images/back_arrow.svg" class="back-arrow">
+		<p>Обратно</p>
+	  </div>
+</section>
+<section class="event__3">
+	<div class="event_title">
+	<h4> Собери как можно больше конфет! </h4>
+	</div>
+	<div class="back" id="backButton_3"> 
+		<img src="images/back_arrow.svg" class="back-arrow">
+		<p>Обратно</p>
+	</div>
+	<div class="total"> 
+		<p class="counter">Собрано:</p> <span style="text-shadow: 0 0 5px rgb(255, 255, 255);"></span>
+	</div>
+</section>
+<section class="event__4">
+	<div class="event_title">
+	<h4> Приготовь десерт!</h4>
+	</div>
+	<div class="container">
+	<div class="points">
+		<p id="point_1">Выпечь коржи</p>
+		<p id="point_2">Пропитать слои</p>
+		<p id="point_3">Нанести крем</p>
+		<p id="point_4">Украсить тортик</p>
+		<p id="point_5">Подача!</p>
+	</div>
+	<div class="strawberry_cake">
+		<div class="svg_cake" id="svg-cake">
+		</div>
+	</div>
+</div>
+	<div class="back" id="backButton_4">
+		<img src="images/back_arrow.svg" class="back-arrow">
+		<p>Обратно</p>
+	</div>
+	<div id="confetti-container"></div>
+</section>
+</body>
+</html>
